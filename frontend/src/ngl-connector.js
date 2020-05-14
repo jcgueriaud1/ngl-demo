@@ -1,4 +1,7 @@
+import * as NGL from "ngl/dist/ngl.js";
+
 window.Vaadin.Flow.nglConnector = {
+
     initLazy: function (c) {
         // Check whether the connector was already initialized
         if (c.$connector) {

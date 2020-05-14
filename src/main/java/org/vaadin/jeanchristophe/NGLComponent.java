@@ -2,6 +2,7 @@ package org.vaadin.jeanchristophe;
 
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.dependency.JavaScript;
+import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.dom.Element;
 import com.vaadin.flow.function.SerializableConsumer;
@@ -12,7 +13,8 @@ import elemental.json.JsonArray;
 /**
  * @author jcgueriaud
  */
-@JavaScript("https://cdn.rawgit.com/arose/ngl/v0.10.4-1/dist/ngl.js")
+@NpmPackage(value = "ngl", version = "0.10.4")
+//@JavaScript("https://cdn.rawgit.com/arose/ngl/v0.10.4-1/dist/ngl.js")
 @JavaScript("./src/ngl-connector.js")
 public class NGLComponent extends Div {
 
